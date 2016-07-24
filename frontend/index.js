@@ -10,3 +10,4 @@ window.onload = function() {
   var charsInfoContainer = document.getElementById('info-container-characters');
   var addToFavesBtn = document.getElementById('add-to-faves-btn');
   var nameAddToFaves = '';
+rsrrs
