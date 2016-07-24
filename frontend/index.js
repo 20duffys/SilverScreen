@@ -11,3 +11,19 @@ window.onload = function() {
   var addToFavesBtn = document.getElementById('add-to-faves-btn');
   var nameAddToFaves = '';
 rsrrs
+
+
+
+
+var url = "https://api.nytimes.com/svc/movies/v2/reviews/search.json";
+url += '?' + $.param({
+  'api-key': "d9563caa2d474236b9d936a1f726dd37"
+});
+$.ajax({
+  url: url,
+  method: 'GET',
+}).done(function(result) {
+  console.log(result);
+}).fail(function(err) {
+  throw err;
+});
